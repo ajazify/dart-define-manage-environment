@@ -68,3 +68,15 @@ Update your `launch` file with respect to your `env` , Here in example `dev.json
 }
 ```
 
+### Step 3: Debugging with VS Code 🐞
+
+- Open the Command Palette in VS Code (Ctrl + Shift + P on Windows/Linux, Cmd + Shift + P on macOS).
+- Search for "Debug: Select and Start Debugging" and select it.
+- Choose the environment you want to run (e.g., "Dev Env" or "Prod Env").
+
+
+### Conclusion 🎉
+
+Using Dart's `--dart-define` feature and setting up `environment-specific configurations` in your Flutter projects helps maintain a `clean`, `scalable`, and `secure` codebase. This guide covered the steps to add different environments, run them from the terminal, and configure them for debugging in VS Code.
+
+Made with ❤️ by [Ajazify](https://github.com/ajazify)
