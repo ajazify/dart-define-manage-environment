@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Dev Env",
+            "cwd": "dart_define_to_manage_env",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define-from-file=env/dev.json"
+            ]
+        },
+        {
+            "name": "Prod Env",
+            "cwd": "dart_define_to_manage_env",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define-from-file=env/prod.json"
+            ]
+        },
+        
+        {
+            "name": "dart_define_to_manage_env (profile mode)",
+            "cwd": "dart_define_to_manage_env",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dart_define_to_manage_env (release mode)",
+            "cwd": "dart_define_to_manage_env",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
