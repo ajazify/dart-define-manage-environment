@@ -30,4 +30,41 @@ Create an `env` directory in the root of your project and add JSON files for eac
     "baseUrl" : "https://devcaller.com/example/v1",
     "apiKey" : "DEV8203G3DECOR234S452FSBGRSDFSFDRGTDSEREFDGFHFGDFGd"
 }
+```
+
+### Step 2: Running the App from the Terminal 🖥️
+
+To run your app using a specific environment configuration from the terminal, use the --dart-define-from-file option.
+
+#### `bash`
+```bash
+flutter run --dart-define-from-file=env/dev.json
+```
+
+### Step 3: Debugging with VS Code 🐞
+
+To streamline the process of running different environments while debugging in VS Code, configure your .vscode/launch.json file.
+Configure `launch.json`
+
+To Create `launch.json` > Go to `Run and Debug` pannel or `ctrl+shift+d` >> click `create new launch.json`
+
+Update your `launch` file with respect to your `env` , Here in example `dev.json`
+#### `launch.json`
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dev Env",
+      "cwd": "dart_define_to_manage_env",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define-from-file=env/dev.json"
+      ]
+    }
+  ]
+}
+```
 
